@@ -1,0 +1,442 @@
+header, nav, aside, article, footer, section, main, figure, figcaption {
+
+  display: block;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* header with logos */
+body {
+  background-color: black;
+}
+.logo-container {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.lg-logo {
+  padding-top: 50%;
+  padding-bottom: 5%;
+  max-width: 80%;
+
+}
+/* Scroll down css*/
+.ct-btn-scroll {
+  width: 100%;
+  left: 0px;
+  right: 0px;
+  position: absolute;
+  text-align: center;
+  z-index: 9;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+  padding: 0;
+}
+.col-md-12 {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+/*------bounce----*/
+@-webkit-keyframes bounce {
+  75%{
+    transform: translate(0px, -30%);
+  }
+
+ 100% {
+    transform: translate(0px, 0px);
+  }
+}
+.bounce {
+      text-align:center;
+      margin:0 auto;
+     -webkit-animation: bounce 1.5s infinite;
+     max-width: 10%;
+}
+/* End Scroll down Css*/
+
+.group-logo {
+  max-width:100%;
+  text-align: center;
+  border-bottom: 0.4em solid #6B6B6B;
+  margin-bottom: 0%;
+ }
+
+.group-logo img {
+  max-width: 13%;
+  padding: 14% 1% 2%;
+  margin-left:2%;
+ }
+ /*header end*/
+
+body {
+	font-family: sans-serif;
+}
+
+/* NAVIGATION */
+nav {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  border-bottom: 0.2em solid #6B6B6B;
+}
+
+nav span a {
+  margin: 0.5em;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+}
+
+nav.topBotomBordersOut a:before, div.topBotomBordersOut a:after
+{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+nav.topBotomBordersOut a:before
+{
+    top: 0px;
+    transform: translateY(10px);
+}
+
+nav.topBotomBordersOut a:after
+{
+    bottom: 0px;
+    transform: translateY(-10px);
+}
+
+nav.topBotomBordersOut a:hover:before, nav.topBotomBordersOut a:hover:after
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.logo {
+  width: 7.5%;
+}
+
+.footer-logo {
+  width: 10%
+}
+
+.hello {
+  border-top: 0.1em solid #E2837D;
+  border-bottom: 0.3em solid #948D8A;
+  background: linear-gradient(to bottom, #CF3228, #B04F36, #544641);
+  text-align: center;
+  margin: auto 0;
+  color: white;
+  padding: 2em 1em;
+}
+
+/* VILLIANS AND SUPERS FLEXBOX GALLERY --------------------*/
+.super-content {
+	flex-grow: 1;
+  justify-content: center;
+}
+
+.super-content img {
+	max-width: 100%;
+}
+
+
+.characters {
+	display: flex;
+	flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.villains {
+  max-width: 1100px;
+}
+/* the namesake classes below restrict their height to keep everything proportional */
+.mrincredible {
+  max-height: 400px;
+}
+
+.helen {
+  max-height: 375px;
+}
+
+.violet {
+  max-height: 350px;
+}
+
+.dash {
+  max-height: 335px;
+}
+
+.jackjack {
+  max-height: 300px;
+}
+
+.syndrome {
+  max-height: 350px;
+}
+
+.screenslaver {
+  max-height: 400px;
+}
+
+.underminer {
+  max-height: 300px;
+}
+.edna {
+  max-height: 500px;
+  margin: 0 auto;
+}
+/* ------ HOMEPAGE BUTTONS -------*/
+
+.backbtn {
+  background-color: #0B0B0B;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  border: 0.2em;
+  padding: 1.0em 3.0em;
+  margin: 2.0em 1.0em;
+  transition: transform .2s; /* Animation */
+}
+
+.backbtn:hover {
+  transform: scale(1.1);
+  color: #CF3228;
+}
+
+/* -------- END HOMEPAGE BUTTONS -------- */
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-top: 0.2em solid #6B6B6B;
+  padding: 1.0em;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.gridder{
+  margin:0px;
+  padding:0px;
+  list-style-type:none;
+  max-width: 100%;
+}
+
+.gridder-list{
+  display:inline-block;
+  vertical-align: bottom;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.gridder-show{
+  display:block;
+  float:left;
+  width:100%;
+  position:relative;
+  background:black url("../images/loading-spin.svg") no-repeat center;
+}
+
+.gridder-show.loading{
+  background:#EEE url("../images/loading-spin.svg") no-repeat center
+}
+
+.gridder-content{
+  display:none;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.col-sm-6 {
+  text-align: left;
+  padding: 9% 2% 2% 2%;
+}
+
+.col-sm-6 h2, p {
+  padding: 1%;
+}
+.gridder-list{
+  width:49.5%
+}
+
+.gridder-list:nth-child(n){
+  margin-bottom:1%;
+  margin-right:1%;
+}
+
+.gridder-list:nth-of-type(2n){
+  margin-right:0;
+  margin-bottom:0;
+}
+
+.gridder-show{
+  background:black;
+  color: white;
+  margin-bottom:1%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.gridder-navigation .gridder-nav.disabled{
+  opacity:.5;
+  color: white;
+}
+
+.gridder-navigation a {
+  color: white;
+  padding: 5%;
+}
+
+.gridder-list{
+  cursor:pointer;
+}
+
+.gridder-list:hover{
+  opacity:0.8;
+  color: white;
+}
+
+.hasSelectedItem .gridder-list{
+  opacity:.5;
+}
+
+.hasSelectedItem .gridder-list.selectedItem{
+  opacity:1;
+}
+
+/* START 400px MEDIA QUERY */
+@media (min-width: 400px) {
+  .lg-logo {
+    padding-top: 35%;
+    padding-bottom: 5%;
+    max-width: 80%;
+  }
+  .bounce {
+       max-width: 10%;
+  }
+}
+
+/* END 400px MEDIA QUERY */
+
+
+
+/* START 500px MEDIA QUERY */
+@media (min-width: 500px) {
+  .lg-logo {
+    padding-top: 30%;
+    padding-bottom: 5%;
+    max-width: 70%;
+  }
+  .bounce {
+       max-width: 8%;
+  }
+}
+
+/* END 500px MEDIA QUERY */
+
+
+
+/* START 600px MEDIA QUERY */
+@media (min-width: 600px) {
+  .lg-logo {
+    padding-top: 20%;
+    padding-bottom: 5%;
+    max-width: 70%;
+  }
+  .bounce {
+       max-width: 8%;
+  }
+}
+
+/* END 600px MEDIA QUERY */
+
+
+/* START 700px MEDIA QUERY */
+@media (min-width: 700px){
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .col-sm-6 {
+    max-width: 40%;
+    text-align: left;
+    padding: 2%;
+  }
+  .lg-logo {
+    padding-top: 10%;
+    padding-bottom: 5%;
+    max-width: 60%;
+  }
+  .bounce {
+       max-width: 5%;
+  }
+}
+/* END 700px MEDIA QUERY */
+
+
+/* START 800px MEDIA QUERY */
+@media (min-width: 800px){
+  .lg-logo {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    max-width: 50%;
+  }
+  .bounce {
+       max-width: 5%;
+  }
+}
+/* START 800px MEDIA QUERY */
+
+
+/* START 1000px MEDIA QUERY */
+@media (min-width: 1000px){
+  .lg-logo {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    max-width: 40%;
+  }
+  .bounce {
+       max-width: 5%;
+  }
+}
+/* START 1000px MEDIA QUERY */
+
+
+
+@media screen and (min-width: 700px){
+  .gridder-list{width:15.8333333333%;
+  }
+}
+.gridder-list:nth-child(n){
+  margin-bottom:1%;margin-right:1%;
+}
+
+.gridder-list:nth-of-type(6n){
+  margin-right:0;
+  margin-bottom:0;
+  }

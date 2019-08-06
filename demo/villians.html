@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+<title>The Incredibles | Villians</title>
+
+<link rel="stylesheet" href="css/demo.css" rel="stylesheet">
+<meta http-equiv="Content-Type" content="text/html" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <nav class="topBotomBordersOut">
+      <span><a href="supers.html">SUPERS</a></span>
+        <a href="index.html"><img src="images/Logo_Icon.png" alt="Logo" title="Logo" class="logo" /></a>
+       <span><a href="villians.html">VILLAINS</a></span>
+  </nav>
+
+
+    <section class="hello super-content">
+      <section class="characters">
+
+        <div class="container">
+
+            <ul class="gridder">
+                <li class="gridder-list" data-griddercontent="#gridder-content-1">
+                    <img src="images/syndrome.png" class="img-fluid">
+                </li><!--
+                --><li class="gridder-list" data-griddercontent="#gridder-content-2">
+                    <img src="images/screenslaver.png" class="img-fluid">
+                </li><!--
+                --><li class="gridder-list" data-griddercontent="#gridder-content-3">
+                    <img src="images/underminer.png" class="img-fluid">
+            </ul>
+
+
+            <div id="gridder-content-1" class="gridder-content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="images/syndrome.png" class="img-fluid" />
+                    </div>
+                    <div class="col-sm-6">
+                      <h2>Buddy Pine</h2>
+                      <p>ALIAS: Syndrome</p>
+                      <p>POWERS: Technological genius</p>
+                      <p>MEMORABLE QUOTE: “My name is not Buddy! And it’s not Incrediboy, either. That ship has sailed."</p>
+                    </div>
+                </div>
+            </div>
+            <div id="gridder-content-2" class="gridder-content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="images/screenslaver.png" class="img-fluid" />
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>Evelyn Deavor</h2>
+                        <p>ALIAS: Screenslaver</p>
+                        <p>POWERS: Hypnotism Hacking Extremely high intelligence Taser stick</p>
+                        <p>MEMORABLE QUOTE: "Ah shucks, I'm just the genius behind the genius."</p>
+                    </div>
+                </div>
+            </div>
+            <div id="gridder-content-3" class="gridder-content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="images/underminer.png" class="img-fluid" id="open-img"/>
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>Name Unknown</h2>
+                        <p>ALIAS: Underminer</p>
+                        <p>MEMORABLE QUOTES: "Behold, the Underminer! I'm always beneath you, but nothing is beneath me! I hereby declare war on peace and happiness! Soon, all will tremble before me!"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+  </section>
+
+   <footer>
+       <img src="images/kts.PNG" alt="Footer Logo" title="Footer Logo" class="footer-logo" />
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="../dist/js/jquery.gridder.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+
+            // REMOVE AND ADD CLICK EVENT
+            $('.doAddItem').on('click', function () {
+                $(".gridder").data('gridderExpander').gridderAddItem('TEST');
+            });
+
+            // Call Gridder
+            $(".gridder").gridderExpander({
+                scrollOffset: 60,
+                scrollTo: "panel", // "panel" or "listitem"
+                animationSpeed: 400,
+                animationEasing: "easeInOutExpo",
+                onStart: function () {
+                    console.log("Gridder Inititialized");
+                },
+                onExpanded: function (object) {
+                    console.log("Gridder Expanded");
+                },
+                onChanged: function (object) {
+                    console.log("Gridder Changed");
+                },
+                onClosed: function () {
+                    console.log("Gridder Closed");
+                }
+            });
+        });
+    </script>
+
+  </body>
+  </html>

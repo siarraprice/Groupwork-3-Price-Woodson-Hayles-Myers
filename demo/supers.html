@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+<title>The Incredibles | Supers</title>
+
+<link rel="stylesheet" href="css/demo.css" rel="stylesheet">
+<meta http-equiv="Content-Type" content="text/html" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <nav class="topBotomBordersOut">
+      <span><a href="supers.html">SUPERS</a></span>
+        <a href="index.html"><img src="images/Logo_Icon.png" alt="Logo" title="Logo" class="logo" /></a>
+       <span><a href="villians.html">VILLAINS</a></span>
+  </nav>
+
+
+    <section class="hello super-content">
+      <section class="characters">
+
+        <div class="container">
+
+            <ul class="gridder">
+                <li class="gridder-list" data-griddercontent="#gridder-content-1">
+                    <img src="images/MrIncredible.png" class="mrincredible" class="sepia">
+                </li><!--
+                --><li class="gridder-list" data-griddercontent="#gridder-content-2">
+                    <img src="images/helen.png" class="helen">
+                </li><!--
+                --><li class="gridder-list" data-griddercontent="#gridder-content-3">
+                    <img src="images/Violet.png" class="violet">
+                </li><!--
+                --><li class="gridder-list" data-griddercontent="#gridder-content-4">
+                    <img src="images/Dash.png" class="dash">
+                </li><!--
+                --><li class="gridder-list" data-griddercontent="#gridder-content-5">
+                    <img src="images/JackJack.png" class="jackjack">
+                </li>
+            </ul>
+
+
+            <div id="gridder-content-1" class="gridder-content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="images/MrIncredible.png" class="img-fluid" />
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>Robert "Bob" Parr</h2>
+                        <p>ALIASES: Mr. Incredible, Mr. Inflabible </p>
+                        <p>OCCUPATION: Superhero, Father</p>
+                        <p>POWERS: Superhuman strength, enhanced stamina,
+                        enhanced durability, danger sense</p>
+                        <p>WEAKNESSES: Back from being middle aged</p>
+
+                    </div>
+                </div>
+            </div>
+            <div id="gridder-content-2" class="gridder-content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="images/helen.png" class="img-fluid" />
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>Helen Parr</h2>
+                        <p>ALIASES: Mrs. Incredible, Elastigirl</p>
+                        <p>OCCUPATION: Superhero, Mother</p>
+                        <p>POWERS: Inhuman elasticity, shapeshifting, density changing, superhuman durability</p>
+                        <p>WEAKNESSES: Elasticity can cause her to get tangled, blunt force, temperature extremes make her elasticity less effective</p>
+                    </div>
+                </div>
+            </div>
+            <div id="gridder-content-3" class="gridder-content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="images/Violet.png" class="img-fluid" id="open-img"/>
+                    </div>
+                    <div class="col-sm-6">
+                      <h2>Violet Parr</h2>
+                      <p>ALIAS:Violets</p>
+                      <p>POWERS: Invisibility, force-field generation </p>
+                      <p>WEAKNESSES: Blunt force, low stamina, invisibility requires special clothes</p>
+                    </div>
+                </div>
+            </div>
+            <div id="gridder-content-4" class="gridder-content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="images/Dash.png" class="img-fluid" />
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>Dashiell Robert "Dash" Parr</h2>
+                        <p>ALIAS: Dash</p>
+                        <p>POWERS: Superhuman speed, superhuman reflexes, superhuman stamina, superhuman durability </p>
+                        <p>WEAKNESSES: None known</p>
+                    </div>
+                </div>
+            </div>
+            <div id="gridder-content-5" class="gridder-content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="images/JackJack.png" class="img-fluid" />
+                    </div>
+                    <div class="col-sm-6">
+                      <h2>Jack Parr</h2>
+                      <p>ALIAS: Jack-Jack</p>
+                      <p>POWERS: Polymorphing, superhuman strength, superhuman durability, wall-crawling, self-dupplication, teleportation, laser vision, eye blaster, electrokinesis, telekeninesis, levitation</p>
+                      <p>WEAKNESSES: Unknown</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+      </section>
+    </section>
+
+    <footer>
+       <img src="images/kts.PNG" alt="Footer Logo" title="Footer Logo" class="footer-logo" />
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="../dist/js/jquery.gridder.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+
+            // REMOVE AND ADD CLICK EVENT
+            $('.doAddItem').on('click', function () {
+                $(".gridder").data('gridderExpander').gridderAddItem('TEST');
+            });
+
+            // Call Gridder
+            $(".gridder").gridderExpander({
+                scrollOffset: 60,
+                scrollTo: "panel", // "panel" or "listitem"
+                animationSpeed: 400,
+                animationEasing: "easeInOutExpo",
+                onStart: function () {
+                    console.log("Gridder Inititialized");
+                },
+                onExpanded: function (object) {
+                    console.log("Gridder Expanded");
+                },
+                onChanged: function (object) {
+                    console.log("Gridder Changed");
+                },
+                onClosed: function () {
+                    console.log("Gridder Closed");
+                }
+            });
+        });
+    </script>
+  </body>
+  </html>
